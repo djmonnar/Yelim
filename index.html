@@ -10,11 +10,19 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Pretendard:wght@400;500;600;700;800;900&display=swap');
         html { scroll-behavior: smooth; }
-        body { font-family: 'Pretendard', sans-serif; word-break: normal; overflow-wrap: break-word; }
+        body { font-family: 'Pretendard', sans-serif; word-break: normal; overflow-wrap: anywhere; }
         .marquee-track { animation: marquee 28s linear infinite; }
+        .impact-fill { animation: impactFade 600ms ease-out both; }
         @keyframes marquee {
             from { transform: translateX(0); }
             to { transform: translateX(-50%); }
+        }
+        @keyframes impactFade {
+            from { opacity: 0.35; }
+            to { opacity: 1; }
+        }
+        @media (prefers-reduced-motion: reduce) {
+            .marquee-track, .impact-fill { animation: none; }
         }
     </style>
 </head>
@@ -152,39 +160,99 @@
     </section>
 
     <!-- Impact -->
-    <section id="impact" class="py-20 px-5 max-w-6xl mx-auto">
+    <section id="impact" class="py-20 px-5 max-w-7xl mx-auto overflow-hidden">
         <div class="flex flex-col md:flex-row md:items-end justify-between gap-5 mb-10">
             <div>
                 <p class="text-xs font-black tracking-widest text-neutral-400 uppercase mb-3">Impact in Numbers</p>
                 <h2 class="text-3xl sm:text-4xl font-black tracking-tight">성과는 숫자로 남습니다.</h2>
             </div>
-            <p class="text-neutral-500 max-w-xl leading-relaxed">브랜드 기획, 현장 운영, 콘텐츠 마케팅, QSC 개선을 통해 만든 주요 성과입니다.</p>
+            <p class="text-neutral-500 max-w-xl leading-relaxed">브랜드 기획, 현장 운영, 콘텐츠 마케팅, QSC 개선이 매출·참여·평판으로 이어진 흐름입니다.</p>
         </div>
 
-        <div class="grid grid-cols-2 lg:grid-cols-6 gap-4">
-            <div class="bg-white border border-neutral-200 rounded-3xl p-6 shadow-sm">
-                <p class="text-3xl font-black">3+</p>
-                <p class="text-sm text-neutral-500 mt-3 leading-snug">동시 런칭 및 운영 브랜드</p>
+        <div class="grid lg:grid-cols-[1.05fr_0.95fr] gap-5 min-w-0">
+            <div class="w-[calc(100vw-2.5rem)] sm:w-auto max-w-full min-w-0 rounded-[2rem] bg-neutral-950 text-white p-6 sm:p-8 overflow-hidden shadow-xl">
+                <div class="flex items-start justify-between gap-5 mb-10">
+                    <div>
+                        <p class="text-xs font-black tracking-widest uppercase text-neutral-500 mb-3">Revenue Signal</p>
+                        <p class="text-5xl sm:text-7xl font-black leading-none text-white">8,000만</p>
+                        <p class="text-neutral-400 mt-4 leading-relaxed">레이지선데이 최다 월매출. 공간·메뉴·운영 구조가 매출 성과로 이어진 대표 지표입니다.</p>
+                    </div>
+                    <i data-lucide="trending-up" class="w-10 h-10 text-neutral-500 shrink-0"></i>
+                </div>
+
+                <div class="space-y-6">
+                    <div>
+                        <div class="flex justify-between gap-4 mb-2 text-sm">
+                            <span class="font-bold text-neutral-200">SNS 팔로워 증가</span>
+                            <span class="font-black text-white">70%</span>
+                        </div>
+                        <div class="h-3 rounded-full bg-white/10 overflow-hidden">
+                            <div class="impact-fill h-full w-[70%] rounded-full bg-white"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="flex justify-between gap-4 mb-2 text-sm">
+                            <span class="font-bold text-neutral-200">브랜드 긍정 평가 상승</span>
+                            <span class="font-black text-white">40%</span>
+                        </div>
+                        <div class="h-3 rounded-full bg-white/10 overflow-hidden">
+                            <div class="impact-fill h-full w-[40%] rounded-full bg-neutral-400"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="flex justify-between gap-4 mb-2 text-sm">
+                            <span class="font-bold text-neutral-200">리뷰 평균 평점 개선</span>
+                            <span class="font-black text-white">+2.5점</span>
+                        </div>
+                        <div class="h-3 rounded-full bg-white/10 overflow-hidden">
+                            <div class="impact-fill h-full w-[83%] rounded-full bg-stone-300"></div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="bg-white border border-neutral-200 rounded-3xl p-6 shadow-sm">
-                <p class="text-3xl font-black">2,000+</p>
-                <p class="text-sm text-neutral-500 mt-3 leading-snug">지역 이벤트 참여자</p>
-            </div>
-            <div class="bg-white border border-neutral-200 rounded-3xl p-6 shadow-sm">
-                <p class="text-3xl font-black">70%</p>
-                <p class="text-sm text-neutral-500 mt-3 leading-snug">SNS 팔로워 증가</p>
-            </div>
-            <div class="bg-white border border-neutral-200 rounded-3xl p-6 shadow-sm">
-                <p class="text-3xl font-black">40%</p>
-                <p class="text-sm text-neutral-500 mt-3 leading-snug">브랜드 긍정 평가 상승</p>
-            </div>
-            <div class="bg-white border border-neutral-200 rounded-3xl p-6 shadow-sm">
-                <p class="text-3xl font-black">8,000만</p>
-                <p class="text-sm text-neutral-500 mt-3 leading-snug">레이지선데이 최다 월매출</p>
-            </div>
-            <div class="bg-white border border-neutral-200 rounded-3xl p-6 shadow-sm">
-                <p class="text-3xl font-black">+2.5</p>
-                <p class="text-sm text-neutral-500 mt-3 leading-snug">리뷰 평균 평점 개선</p>
+
+            <div class="grid sm:grid-cols-2 gap-5 min-w-0">
+                <div class="w-[calc(100vw-2.5rem)] sm:w-auto max-w-full min-w-0 overflow-hidden rounded-[2rem] bg-white border border-neutral-200 p-6 shadow-sm">
+                    <i data-lucide="store" class="w-8 h-8 text-neutral-500 mb-8"></i>
+                    <p class="text-4xl font-black">3+</p>
+                    <p class="font-bold mt-2">동시 런칭 및 운영 브랜드</p>
+                    <div class="flex gap-2 mt-6" aria-label="3개 이상의 브랜드 운영">
+                        <span class="w-9 h-9 rounded-full bg-neutral-900"></span>
+                        <span class="w-9 h-9 rounded-full bg-neutral-500"></span>
+                        <span class="w-9 h-9 rounded-full bg-neutral-300"></span>
+                        <span class="w-9 h-9 rounded-full border-2 border-dashed border-neutral-300"></span>
+                    </div>
+                </div>
+                <div class="w-[calc(100vw-2.5rem)] sm:w-auto max-w-full min-w-0 overflow-hidden rounded-[2rem] bg-white border border-neutral-200 p-6 shadow-sm">
+                    <i data-lucide="users" class="w-8 h-8 text-neutral-500 mb-8"></i>
+                    <p class="text-4xl font-black">2,000+</p>
+                    <p class="font-bold mt-2">지역 이벤트 참여자</p>
+                    <div class="grid grid-cols-10 gap-1 mt-6" aria-label="이벤트 참여 규모 시각화">
+                        <span class="h-3 rounded-full bg-neutral-900"></span><span class="h-3 rounded-full bg-neutral-900"></span><span class="h-3 rounded-full bg-neutral-900"></span><span class="h-3 rounded-full bg-neutral-900"></span><span class="h-3 rounded-full bg-neutral-900"></span>
+                        <span class="h-3 rounded-full bg-neutral-500"></span><span class="h-3 rounded-full bg-neutral-500"></span><span class="h-3 rounded-full bg-neutral-300"></span><span class="h-3 rounded-full bg-neutral-300"></span><span class="h-3 rounded-full bg-neutral-200"></span>
+                    </div>
+                </div>
+                <div class="w-[calc(100vw-2.5rem)] sm:w-auto max-w-full min-w-0 overflow-hidden sm:col-span-2 rounded-[2rem] bg-white border border-neutral-200 p-6 shadow-sm">
+                    <p class="text-xs font-black tracking-widest text-neutral-400 uppercase mb-5">Impact Flow</p>
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                        <div>
+                            <p class="text-2xl font-black">기획</p>
+                            <p class="text-sm text-neutral-500 mt-2 leading-snug">3+ 브랜드 동시 운영</p>
+                        </div>
+                        <div>
+                            <p class="text-2xl font-black">집객</p>
+                            <p class="text-sm text-neutral-500 mt-2 leading-snug">2,000+ 이벤트 참여</p>
+                        </div>
+                        <div>
+                            <p class="text-2xl font-black">확산</p>
+                            <p class="text-sm text-neutral-500 mt-2 leading-snug">SNS 70% 증가</p>
+                        </div>
+                        <div>
+                            <p class="text-2xl font-black">신뢰</p>
+                            <p class="text-sm text-neutral-500 mt-2 leading-snug">리뷰 +2.5점 개선</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
