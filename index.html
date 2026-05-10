@@ -35,8 +35,8 @@
     </nav>
 
     <!-- Hero Section -->
-    <header id="top" class="pt-28 pb-16 px-5 max-w-6xl mx-auto grid lg:grid-cols-[0.92fr_1.08fr] items-center gap-12">
-        <div>
+    <header id="top" class="pt-28 pb-16 px-5 max-w-7xl mx-auto">
+        <div class="max-w-5xl">
             <div class="inline-flex items-center gap-2 px-4 py-1.5 bg-neutral-200 text-neutral-800 rounded-full text-xs font-extrabold mb-6 tracking-wide uppercase">
                 <span class="w-2 h-2 bg-neutral-900 rounded-full"></span>
                 F&B Brand · Space · QSC · Local Marketing
@@ -78,19 +78,25 @@
             </div>
         </div>
 
-        <div class="relative min-h-[420px] sm:min-h-[520px]">
-            <div class="absolute inset-0 rounded-[2rem] overflow-hidden bg-neutral-200 shadow-2xl ring-1 ring-black/5">
+        <div class="mt-12 grid lg:grid-cols-[1.45fr_0.55fr] gap-4">
+            <div class="relative aspect-[4/3] sm:aspect-[16/10] lg:aspect-[16/11] min-h-[360px] lg:min-h-[560px] rounded-[2rem] overflow-hidden bg-neutral-200 shadow-2xl ring-1 ring-black/5">
                 <img src="assets/images/hero-space.jpg" alt="기획한 F&B 공간 야외 테라스" class="w-full h-full object-cover">
-                <div class="absolute inset-0 bg-gradient-to-t from-black/65 via-black/10 to-transparent"></div>
+                <div class="absolute inset-0 bg-gradient-to-t from-black/45 via-transparent to-transparent"></div>
+                <div class="absolute top-4 right-4 flex items-center gap-2 sm:gap-3 bg-white/92 backdrop-blur p-2 sm:px-4 sm:py-3 rounded-2xl shadow-lg">
+                    <img src="assets/images/profile.png" alt="김예림 프로필" class="w-12 h-12 rounded-full object-cover bg-neutral-200">
+                    <div class="hidden sm:block">
+                        <p class="font-black leading-none">김예림</p>
+                        <p class="text-xs text-neutral-500 mt-1">F&B Brand Planner</p>
+                    </div>
+                </div>
             </div>
-            <div class="absolute -bottom-6 left-4 sm:left-8 w-[46%] max-w-[260px] aspect-[4/3] rounded-3xl overflow-hidden border-4 border-neutral-50 shadow-xl bg-neutral-200">
-                <img src="assets/images/event-crowd.jpg" alt="지역 행사와 고객이 모인 F&B 공간" class="w-full h-full object-cover">
-            </div>
-            <div class="absolute top-4 right-4 flex items-center gap-2 sm:gap-3 bg-white/92 backdrop-blur p-2 sm:px-4 sm:py-3 rounded-2xl shadow-lg">
-                <img src="assets/images/profile.png" alt="김예림 프로필" class="w-12 h-12 rounded-full object-cover bg-neutral-200">
-                <div class="hidden sm:block">
-                    <p class="font-black leading-none">김예림</p>
-                    <p class="text-xs text-neutral-500 mt-1">F&B Brand Planner</p>
+            <div class="grid sm:grid-cols-2 lg:grid-cols-1 gap-4">
+                <div class="aspect-[16/10] lg:aspect-auto lg:min-h-[330px] rounded-3xl overflow-hidden bg-neutral-200 shadow-lg ring-1 ring-black/5">
+                    <img src="assets/images/event-crowd.jpg" alt="지역 행사와 고객이 모인 F&B 공간" class="w-full h-full object-cover">
+                </div>
+                <div class="hidden sm:flex flex-col justify-center rounded-3xl bg-neutral-900 px-6 py-5 text-white">
+                    <p class="text-xs font-black tracking-widest text-white/50 uppercase mb-2">Live Evidence</p>
+                    <p class="font-black text-xl leading-tight text-white">사람이 모이는 공간으로 증명</p>
                 </div>
             </div>
         </div>
@@ -309,8 +315,8 @@
 
         <div class="space-y-10">
             <article id="project-town" class="scroll-mt-24 rounded-[2rem] overflow-hidden bg-white border border-neutral-200 shadow-sm">
-                <div class="grid lg:grid-cols-[0.95fr_1.05fr]">
-                    <div class="aspect-[4/3] sm:aspect-[16/10] lg:aspect-auto lg:min-h-[320px] bg-neutral-200">
+                <div class="grid lg:grid-cols-[1.15fr_0.85fr]">
+                    <div class="aspect-[4/3] sm:aspect-[16/10] lg:aspect-auto lg:min-h-[460px] bg-neutral-200">
                         <img src="assets/images/courtyard.jpg" alt="코리아팀에스 인사동 문화거리 프로젝트" class="w-full h-full object-cover">
                     </div>
                     <div class="p-7 sm:p-10">
@@ -357,7 +363,7 @@
             </article>
 
             <article id="project-lazy" class="scroll-mt-24 rounded-[2rem] overflow-hidden bg-white border border-neutral-200 shadow-sm">
-                <div class="grid lg:grid-cols-[1.05fr_0.95fr]">
+                <div class="grid lg:grid-cols-[0.85fr_1.15fr]">
                     <div class="p-7 sm:p-10 order-2 lg:order-1">
                         <span class="text-xs font-black tracking-widest text-neutral-400 uppercase">Project 02</span>
                         <h3 class="text-2xl sm:text-3xl font-black mt-2 mb-4">브런치 매장 레이지선데이 기획 및 운영</h3>
@@ -398,15 +404,15 @@
                             </div>
                         </div>
                     </div>
-                    <div class="aspect-[4/3] sm:aspect-[16/10] lg:aspect-auto lg:min-h-[320px] bg-neutral-200 order-1 lg:order-2">
+                    <div class="aspect-[4/3] sm:aspect-[16/10] lg:aspect-auto lg:min-h-[460px] bg-neutral-200 order-1 lg:order-2">
                         <img src="assets/images/lazy-sunday.jpg" alt="레이지선데이 브런치 매장 이미지" class="w-full h-full object-cover">
                     </div>
                 </div>
             </article>
 
             <article id="project-qsc" class="scroll-mt-24 rounded-[2rem] overflow-hidden bg-white border border-neutral-200 shadow-sm">
-                <div class="grid lg:grid-cols-[0.95fr_1.05fr]">
-                    <div class="relative aspect-[4/3] sm:aspect-[16/10] lg:aspect-auto lg:min-h-[320px] bg-neutral-100 overflow-hidden">
+                <div class="grid lg:grid-cols-[1.15fr_0.85fr]">
+                    <div class="relative aspect-[4/3] sm:aspect-[16/10] lg:aspect-auto lg:min-h-[460px] bg-neutral-100 overflow-hidden">
                         <img src="assets/images/qsc-manual.png" alt="QSC 매뉴얼 제작 및 직원 교육 자료" class="w-full h-full object-cover blur-[0.5px] scale-105">
                         <div class="absolute inset-0 bg-gradient-to-t from-neutral-950/55 via-transparent to-white/20"></div>
                         <div class="absolute left-5 right-5 bottom-5 text-white">
