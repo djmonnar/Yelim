@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="공간 기반 F&B 브랜드를 기획부터 운영, 마케팅까지 설계하는 김예림 포트폴리오">
+    <title>Projects | 김예림 F&B Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Pretendard:wght@400;500;600;700;800;900&display=swap');
+        html { scroll-behavior: smooth; }
+        * { min-width: 0; }
+        html, body { max-width: 100%; overflow-x: hidden; }
+        body { font-family: 'Pretendard', sans-serif; word-break: break-word; overflow-wrap: anywhere; }
+        p, li, h1, h2, h3, h4, a, span { overflow-wrap: anywhere; }
+        .marquee-track { animation: marquee 28s linear infinite; }
+        .impact-fill { animation: impactFade 600ms ease-out both; }
+        @keyframes marquee {
+            from { transform: translateX(0); }
+            to { transform: translateX(-50%); }
+        }
+        @keyframes impactFade {
+            from { opacity: 0.35; }
+            to { opacity: 1; }
+        }
+        @media (prefers-reduced-motion: reduce) {
+            .marquee-track, .impact-fill { animation: none; }
+        }
+    </style>
+</head>
+<body class="bg-neutral-50 text-neutral-900 overflow-x-hidden">
+
+    <!-- Navigation -->
+    <nav class="fixed left-0 right-0 w-full top-0 bg-white/90 backdrop-blur-md z-50 border-b border-neutral-200">
+        <div class="max-w-6xl mx-auto px-5 py-4 flex justify-between items-center">
+            <a href="index.html#top" class="text-lg sm:text-xl font-extrabold tracking-tighter">KIM YERIM<span class="text-neutral-400">.</span></a>
+            <div class="hidden md:flex items-center gap-6 text-sm font-semibold text-neutral-600">
+                <a href="index.html#about" class="hover:text-neutral-950 transition-colors">About</a>
+                <a href="index.html#impact" class="hover:text-neutral-950 transition-colors">Impact</a>
+                <a href="career.html" class="hover:text-neutral-950 transition-colors">Career</a>
+                <a href="projects.html" class="hover:text-neutral-950 transition-colors">Projects</a>
+            </div>
+            <a href="index.html#contact" class="hidden sm:inline-flex text-sm font-bold bg-neutral-900 text-white px-4 py-2 rounded-full hover:bg-neutral-700 transition-colors">Contact</a>
+        </div>
+    </nav>
+
+    <header id="top" class="pt-28 pb-12 px-5 max-w-6xl mx-auto">
+        <p class="text-xs font-black tracking-widest text-neutral-400 uppercase mb-3">Project Archive</p>
+        <h1 class="text-4xl sm:text-5xl font-black tracking-tight mb-5">프로젝트 상세.</h1>
+        <p class="text-neutral-600 max-w-2xl leading-relaxed">대표 프로젝트의 전략, 실행, 성과, 기여도를 한 페이지에서 자세히 확인할 수 있습니다.</p>
+    </header>
+
+    <!-- Projects -->
+    <section id="projects" class="pt-0 pb-20 px-5 max-w-6xl mx-auto">
+        <div class="mb-12">
+            <p class="text-xs font-black tracking-widest text-neutral-400 uppercase mb-3">Key Projects</p>
+            <h2 class="text-3xl sm:text-4xl font-black tracking-tight mb-4">기획이 현장에서 성과가 된 프로젝트</h2>
+            <p class="text-neutral-500 max-w-2xl leading-relaxed">공간, 메뉴, QSC, 콘텐츠를 따로 보지 않고 하나의 운영 구조로 묶어 실행한 대표 프로젝트입니다.</p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-4 mb-10">
+            <a href="#project-town" class="group block rounded-3xl bg-white border border-neutral-200 p-5 shadow-sm hover:-translate-y-1 hover:shadow-md transition-all">
+                <p class="text-xs font-black tracking-widest text-neutral-400 uppercase mb-5">01 Town Branding</p>
+                <h3 class="font-black text-xl mb-3">인사동 문화거리</h3>
+                <p class="text-sm text-neutral-500 leading-relaxed mb-5">3개 브랜드를 하나의 로컬 상권 경험으로 묶은 통합 기획 프로젝트</p>
+                <span class="inline-flex items-center text-sm font-black gap-2">자세히 보기 <i data-lucide="arrow-right" class="w-4 h-4 group-hover:translate-x-1 transition-transform"></i></span>
+            </a>
+            <a href="#project-lazy" class="group block rounded-3xl bg-white border border-neutral-200 p-5 shadow-sm hover:-translate-y-1 hover:shadow-md transition-all">
+                <p class="text-xs font-black tracking-widest text-neutral-400 uppercase mb-5">02 Store Launch</p>
+                <h3 class="font-black text-xl mb-3">레이지선데이</h3>
+                <p class="text-sm text-neutral-500 leading-relaxed mb-5">브런치 매장의 콘셉트, 메뉴, 공간, 운영 수익 구조를 함께 설계</p>
+                <span class="inline-flex items-center text-sm font-black gap-2">자세히 보기 <i data-lucide="arrow-right" class="w-4 h-4 group-hover:translate-x-1 transition-transform"></i></span>
+            </a>
+            <a href="#project-qsc" class="group block rounded-3xl bg-white border border-neutral-200 p-5 shadow-sm hover:-translate-y-1 hover:shadow-md transition-all">
+                <p class="text-xs font-black tracking-widest text-neutral-400 uppercase mb-5">03 QSC System</p>
+                <h3 class="font-black text-xl mb-3">운영 매뉴얼</h3>
+                <p class="text-sm text-neutral-500 leading-relaxed mb-5">누가 운영해도 같은 품질이 유지되도록 체크리스트와 교육 체계 구축</p>
+                <span class="inline-flex items-center text-sm font-black gap-2">자세히 보기 <i data-lucide="arrow-right" class="w-4 h-4 group-hover:translate-x-1 transition-transform"></i></span>
+            </a>
+        </div>
+
+        <div class="space-y-10">
+            <article id="project-town" class="scroll-mt-24 rounded-[2rem] overflow-hidden bg-white border border-neutral-200 shadow-sm">
+                <div class="grid lg:grid-cols-[1.15fr_0.85fr]">
+                    <div class="aspect-[4/3] sm:aspect-[16/10] lg:aspect-auto lg:min-h-[460px] bg-neutral-200">
+                        <img src="assets/images/courtyard.jpg" alt="코리아팀에스 인사동 문화거리 프로젝트" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-7 sm:p-10">
+                        <span class="text-xs font-black tracking-widest text-neutral-400 uppercase">Project 01</span>
+                        <h3 class="text-2xl sm:text-3xl font-black mt-2 mb-4">코리아팀에스 인사동 문화거리 프로젝트</h3>
+                        <p class="text-neutral-600 leading-relaxed mb-6">살롱드인사, 르빵드인사, 미노리인사를 각각 다른 콘셉트로 세우면서도 인사동 문화거리라는 하나의 방문 동선으로 묶었습니다.</p>
+                        <div class="grid sm:grid-cols-3 gap-4 mb-7">
+                            <div class="p-4 rounded-2xl bg-neutral-50"><p class="text-xs text-neutral-500 mb-1">Scope</p><p class="font-bold text-sm">3개 브랜드 통합</p></div>
+                            <div class="p-4 rounded-2xl bg-neutral-50"><p class="text-xs text-neutral-500 mb-1">Channel</p><p class="font-bold text-sm">SNS · 행사 · 협업</p></div>
+                            <div class="p-4 rounded-2xl bg-neutral-50"><p class="text-xs text-neutral-500 mb-1">Impact</p><p class="font-bold text-sm">최다 매출 기록</p></div>
+                        </div>
+                        <div class="grid md:grid-cols-2 gap-x-7 gap-y-6">
+                            <div>
+                                <h4 class="font-black mb-3">전략</h4>
+                                <ul class="space-y-2 text-sm text-neutral-600 leading-relaxed">
+                                    <li>· 스테이크하우스, 페스츄리 부티크, 로바다야끼를 분리된 브랜드가 아닌 하나의 거리 경험으로 설계</li>
+                                    <li>· 스마트플레이스, 콘텐츠, 지역 행사를 같은 고객 동선 안에서 연결</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4 class="font-black mb-3">실행</h4>
+                                <ul class="space-y-2 text-sm text-neutral-600 leading-relaxed">
+                                    <li>· 사업계획서, 브랜딩, 광고 기획, 공사 현장 관리감독 참여</li>
+                                    <li>· 인플루언서 협업, 이메일·SNS 콘텐츠, 재즈콘서트·버스킹 등 지역 이벤트 운영</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4 class="font-black mb-3">성과</h4>
+                                <ul class="space-y-2 text-sm text-neutral-600 leading-relaxed">
+                                    <li>· ‘진주맛집’, ‘진주양식’ 스마트플레이스 1위 페이지 다수 점유</li>
+                                    <li>· 지역 행사 및 이벤트 참여 2,000명 이상, 브랜드 인지도 긍정 평가 40% 상승</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4 class="font-black mb-3">기여도</h4>
+                                <ul class="space-y-2 text-sm text-neutral-600 leading-relaxed">
+                                    <li>· 전체 프로젝트 전략 기획 및 관리 부총괄</li>
+                                    <li>· 콘텐츠 제작·게시를 통한 팔로워 70% 증가, 3개 브랜드 최다 매출 기록 기여</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article id="project-lazy" class="scroll-mt-24 rounded-[2rem] overflow-hidden bg-white border border-neutral-200 shadow-sm">
+                <div class="grid lg:grid-cols-[0.85fr_1.15fr]">
+                    <div class="p-7 sm:p-10 order-2 lg:order-1">
+                        <span class="text-xs font-black tracking-widest text-neutral-400 uppercase">Project 02</span>
+                        <h3 class="text-2xl sm:text-3xl font-black mt-2 mb-4">브런치 매장 레이지선데이 기획 및 운영</h3>
+                        <p class="text-neutral-600 leading-relaxed mb-6">시장 조사부터 브랜드 슬로건, 메뉴와 공간, 지역 인플루언서 협업, 운영 수익 구조까지 런칭과 운영을 함께 설계했습니다.</p>
+                        <div class="grid sm:grid-cols-3 gap-4 mb-7">
+                            <div class="p-4 rounded-2xl bg-neutral-50"><p class="text-xs text-neutral-500 mb-1">Role</p><p class="font-bold text-sm">공간·메뉴 기획</p></div>
+                            <div class="p-4 rounded-2xl bg-neutral-50"><p class="text-xs text-neutral-500 mb-1">Opening</p><p class="font-bold text-sm">첫날 점심 300만 원</p></div>
+                            <div class="p-4 rounded-2xl bg-neutral-50"><p class="text-xs text-neutral-500 mb-1">Sales</p><p class="font-bold text-sm">최다 월매출 8,000만 원</p></div>
+                        </div>
+                        <div class="grid md:grid-cols-2 gap-x-7 gap-y-6">
+                            <div>
+                                <h4 class="font-black mb-3">전략</h4>
+                                <ul class="space-y-2 text-sm text-neutral-600 leading-relaxed">
+                                    <li>· 평거·판문지구의 브런치 수요와 경쟁 매장을 조사해 타겟 고객 정의</li>
+                                    <li>· 로고, 브랜딩 슬로건, 메뉴, 공간 무드를 하나의 매장 콘셉트로 정리</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4 class="font-black mb-3">실행</h4>
+                                <ul class="space-y-2 text-sm text-neutral-600 leading-relaxed">
+                                    <li>· 사업계획서 작성, 메뉴·공간·이벤트 기획, 지역 인플루언서 협업 진행</li>
+                                    <li>· 매장 QSC와 매출, 인건비, 영업이익 구조를 함께 관리</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4 class="font-black mb-3">성과</h4>
+                                <ul class="space-y-2 text-sm text-neutral-600 leading-relaxed">
+                                    <li>· 오픈 첫날 점심 매출 300만 원, 최다 월매출 8,000만 원 기록</li>
+                                    <li>· 진주 브런치·진주 양식 키워드 상위 노출, 영업이익 1,800만 원 기록</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4 class="font-black mb-3">기여도</h4>
+                                <ul class="space-y-2 text-sm text-neutral-600 leading-relaxed">
+                                    <li>· 전체 캠페인 전략과 온라인 광고 관리, 전환율 25% 증가</li>
+                                    <li>· 콘텐츠 기획, 실행 관리, 운영 구조 관리까지 담당</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="aspect-[4/3] sm:aspect-[16/10] lg:aspect-auto lg:min-h-[460px] bg-neutral-200 order-1 lg:order-2">
+                        <img src="assets/images/lazy-sunday.jpg" alt="레이지선데이 브런치 매장 이미지" class="w-full h-full object-cover">
+                    </div>
+                </div>
+            </article>
+
+            <article id="project-qsc" class="scroll-mt-24 rounded-[2rem] overflow-hidden bg-white border border-neutral-200 shadow-sm">
+                <div class="grid lg:grid-cols-[1.15fr_0.85fr]">
+                    <div class="relative aspect-[4/3] sm:aspect-[16/10] lg:aspect-auto lg:min-h-[460px] bg-neutral-100 overflow-hidden">
+                        <img src="assets/images/qsc-manual.png" alt="QSC 매뉴얼 제작 및 직원 교육 자료" class="w-full h-full object-cover blur-[0.5px] scale-105">
+                        <div class="absolute inset-0 bg-gradient-to-t from-neutral-950/55 via-transparent to-white/20"></div>
+                        <div class="absolute left-5 right-5 bottom-5 text-white">
+                            <p class="text-xs font-black tracking-widest uppercase text-white/70 mb-2">Manual Evidence</p>
+                            <p class="text-xl sm:text-2xl font-black text-white">체크리스트가 운영 품질을 반복 가능하게 만듭니다.</p>
+                        </div>
+                    </div>
+                    <div class="p-7 sm:p-10">
+                        <span class="text-xs font-black tracking-widest text-neutral-400 uppercase">Project 03</span>
+                        <h3 class="text-2xl sm:text-3xl font-black mt-2 mb-4">QSC 매뉴얼 제작 및 직원 교육</h3>
+                        <p class="text-neutral-600 leading-relaxed mb-6">맛, 서비스, 위생의 기준이 직원 개인 역량에만 의존하지 않도록 매장별 체크리스트와 교육 체계를 만들었습니다.</p>
+                        <div class="grid sm:grid-cols-3 gap-4 mb-7">
+                            <div class="p-4 rounded-2xl bg-neutral-50"><p class="text-xs text-neutral-500 mb-1">Role</p><p class="font-bold text-sm">운영 매뉴얼 설계</p></div>
+                            <div class="p-4 rounded-2xl bg-neutral-50"><p class="text-xs text-neutral-500 mb-1">System</p><p class="font-bold text-sm">일·주·월 체크리스트</p></div>
+                            <div class="p-4 rounded-2xl bg-neutral-50"><p class="text-xs text-neutral-500 mb-1">Review</p><p class="font-bold text-sm">평균 2.5점 상승</p></div>
+                        </div>
+                        <div class="grid md:grid-cols-2 gap-x-7 gap-y-6">
+                            <div>
+                                <h4 class="font-black mb-3">전략</h4>
+                                <ul class="space-y-2 text-sm text-neutral-600 leading-relaxed">
+                                    <li>· 매출과 분위기가 하락할 때 QSC 항목을 먼저 점검하는 운영 기준 수립</li>
+                                    <li>· 신입·기존 직원 교육을 통해 인력 변동에도 흔들리지 않는 구조 설계</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4 class="font-black mb-3">실행</h4>
+                                <ul class="space-y-2 text-sm text-neutral-600 leading-relaxed">
+                                    <li>· 매장별 QSC 체크리스트, 직원 교육 매뉴얼북, 일·주·월 점검표 제작</li>
+                                    <li>· 점장·매니저 대상 실행 교육과 직원 평가 기준 운영</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4 class="font-black mb-3">성과</h4>
+                                <ul class="space-y-2 text-sm text-neutral-600 leading-relaxed">
+                                    <li>· 누가 들어와도 같은 품질을 유지하는 체계 구축</li>
+                                    <li>· 서비스 마인드 평준화로 카카오, 네이버, 구글 리뷰 평균 2.5점 상승</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4 class="font-black mb-3">기여도</h4>
+                                <ul class="space-y-2 text-sm text-neutral-600 leading-relaxed">
+                                    <li>· 운영 매뉴얼, 직원 평가, 마인드 교육 체계 직접 설계</li>
+                                    <li>· 메뉴 리뉴얼과 신메뉴 선정에도 QSC 평가 항목을 연결</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- Other Brands -->
+    <section class="pb-20 px-5 max-w-6xl mx-auto">
+        <div class="mb-8">
+            <p class="text-xs font-black tracking-widest text-neutral-400 uppercase mb-3">Brand Portfolio</p>
+            <h2 class="text-2xl sm:text-3xl font-black tracking-tight">함께 기획하고 운영한 F&B 브랜드</h2>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+            <div class="overflow-hidden bg-white border border-neutral-200 rounded-3xl shadow-sm">
+                <div class="aspect-[4/3] bg-neutral-200">
+                    <img src="assets/images/courtyard.jpg" alt="살롱드인사" class="w-full h-full object-cover">
+                </div>
+                <div class="p-6">
+                    <h3 class="font-black text-lg mb-2">살롱드인사</h3>
+                    <p class="text-sm text-neutral-500 leading-relaxed">스테이크하우스 기반 로컬 다이닝 브랜드</p>
+                </div>
+            </div>
+            <div class="overflow-hidden bg-white border border-neutral-200 rounded-3xl shadow-sm">
+                <div class="aspect-[4/3] bg-neutral-200">
+                    <img src="assets/images/bakery.jpg" alt="르빵드인사" class="w-full h-full object-cover">
+                </div>
+                <div class="p-6">
+                    <h3 class="font-black text-lg mb-2">르빵드인사</h3>
+                    <p class="text-sm text-neutral-500 leading-relaxed">페스츄리 부티크 & 호텔 빙수 브랜드</p>
+                </div>
+            </div>
+            <div class="overflow-hidden bg-white border border-neutral-200 rounded-3xl shadow-sm">
+                <div class="aspect-[4/3] bg-neutral-200">
+                    <img src="assets/images/minori.jpg" alt="미노리인사" class="w-full h-full object-cover">
+                </div>
+                <div class="p-6">
+                    <h3 class="font-black text-lg mb-2">미노리인사</h3>
+                    <p class="text-sm text-neutral-500 leading-relaxed">진주 최초 로바다야끼 콘셉트 브랜드</p>
+                </div>
+            </div>
+            <div class="overflow-hidden bg-white border border-neutral-200 rounded-3xl shadow-sm">
+                <div class="aspect-[4/3] bg-neutral-200">
+                    <img src="assets/images/poetic.jpg" alt="포에틱시너리 · 처프트" class="w-full h-full object-cover">
+                </div>
+                <div class="p-6">
+                    <h3 class="font-black text-lg mb-2">포에틱시너리 · 처프트</h3>
+                    <p class="text-sm text-neutral-500 leading-relaxed">공간·메뉴 리뉴얼 및 QSC 개선 프로젝트</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="py-20 bg-neutral-900 text-white text-center px-5 rounded-t-[2rem] sm:rounded-none">
+        <p class="text-xs font-black tracking-widest text-neutral-500 uppercase mb-3">Contact</p>
+        <h2 class="text-3xl sm:text-4xl font-black mb-4 text-white">공간과 브랜드를 함께 성장시킬<br class="hidden sm:block"> 다음 프로젝트를 기다립니다.</h2>
+        <p class="text-neutral-400 mb-10 text-sm sm:text-base">F&B 브랜드 기획, 로컬 마케팅, 공간 운영 프로젝트를 함께할 준비가 되어 있습니다.</p>
+        <div class="flex flex-col sm:flex-row justify-center gap-3 mb-10">
+            <a href="mailto:alsfla0423@naver.com" class="w-full sm:w-auto bg-white text-neutral-900 px-8 py-4 rounded-xl font-black flex items-center justify-center gap-2 hover:bg-neutral-200 transition-colors">
+                <i data-lucide="mail" class="w-5 h-5"></i> alsfla0423@naver.com
+            </a>
+            <a href="tel:010-5615-9704" class="w-full sm:w-auto bg-neutral-800 text-white px-8 py-4 rounded-xl font-black hover:bg-neutral-700 transition-colors border border-neutral-700 flex items-center justify-center gap-2">
+                <i data-lucide="phone" class="w-5 h-5"></i> 010-5615-9704
+            </a>
+        </div>
+        <p class="text-neutral-500 text-xs">© 2026 Kim Yerim. All rights reserved.</p>
+    </section>
+
+    <script>lucide.createIcons();</script>
+</body>
+</html>
